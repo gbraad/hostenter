@@ -22,5 +22,5 @@ ENTRYPOINT ["nsenter", "--target", "1", "--mount", "--uts", "--ipc", "--net", "-
 
 ```powershell
 PS> docker build -t hostenter .
-PS> docker run -it --privileged --pid=host hostenter /bin/sh
+PS> docker run -it --privileged --pid=host hostenter /bin/sh  # gbraad/hostenter
 ···
